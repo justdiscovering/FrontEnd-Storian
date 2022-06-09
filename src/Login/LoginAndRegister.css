@@ -1,0 +1,105 @@
+.Body{
+    width:100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  
+  
+  .Login-container{
+    width: 30%;
+    height: auto;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius:20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Login-container h1{
+    text-align: center;
+    background: var(--NavColor);
+    color:rgb(228, 211, 157);
+    border-radius: 2px;
+  }
+  
+  .Login-container form{
+    width: 90%;
+    /* background: green; */
+    height: auto;
+    margin: auto;
+    align-self: center;
+    margin-bottom: 10px;
+    border-radius: 2px;
+  }
+  
+  form div{
+    margin: 15px 0px;
+  }
+  
+  form button{
+    width: 100%;
+    color: antiquewhite;
+  }
+  
+  form div input{
+    height: 35px;
+    font-size: 23px;
+  }
+  
+  .Login-container a{
+    margin: auto;
+    margin-left: 20px;
+  }
+  .LoginLink{
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  @media screen and (max-width: 1300px)
+  {
+    .Login-container{
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 1000px)
+  {
+    .Login-container{
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 650px)
+  {
+    .Login-container{
+      width: 60%;
+      min-height: 270px;
+    }
+  }
+  
+  @media screen and (max-width: 500px)
+  {
+    .Login-container{
+      width: 70%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 400px)
+  {
+    .Login-container{
+      width: 80%;
+    }
+  }
+  
