@@ -27,10 +27,6 @@ const getCaret = direction => {
     );
 };
 
-function imageFormatter(cell, row) {
-    return "<img src='" + cell + "'/>";
-}
-
 export default class BooksList extends React.Component {
 
     constructor(props) {
@@ -112,13 +108,6 @@ export default class BooksList extends React.Component {
                         Descrição
                     </TableHeaderColumn>
 
-                    <TableHeaderColumn dataField="photo"
-                        dataSort={true}
-                        caretRender={getCaret}
-                        filter={{ type: 'TextFilter', delay: 0 }}
-                        dataFormat={imageFormatter}>
-                        Foto
-                    </TableHeaderColumn>
 
                 </BootstrapTable>
             </div>

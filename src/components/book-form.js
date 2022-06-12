@@ -23,8 +23,7 @@ export class BookForm extends React.Component {
                 id: undefined,
                 nome: "",
                 descrição: "",
-                autor: "",
-                foto: ""
+                autor: ""
             },
             creating: true,
             editing: false,
@@ -49,8 +48,7 @@ export class BookForm extends React.Component {
                     id: bookSelected.id,
                     nome: bookSelected.name,
                     descrição: bookSelected.description,
-                    autor: bookSelected.author,
-                    foto: bookSelected.photo
+                    autor: bookSelected.author
                 }
             }
         )
@@ -71,8 +69,7 @@ export class BookForm extends React.Component {
                             id: event.target.value,
                             nome: this.state.book.name,
                             descrição: this.state.book.description,
-                            autor: this.state.book.author,
-                            foto: this.state.book.photo
+                            autor: this.state.book.author
                         }
                     }
                 );
@@ -83,8 +80,7 @@ export class BookForm extends React.Component {
                         id: this.state.book.id,
                         nome: event.target.value,
                         descrição: this.state.book.description,
-                        autor: this.state.book.author,
-                        foto: this.state.book.photo
+                        autor: this.state.book.author
                     }
                 }
                 );
@@ -95,8 +91,7 @@ export class BookForm extends React.Component {
                         id: this.state.book.id,
                         nome: this.state.book.name,
                         descrição: event.target.value,
-                        autor: this.state.book.author,
-                        foto: this.state.book.photo
+                        autor: this.state.book.author
                     }
                 });
                 break;
@@ -107,21 +102,7 @@ export class BookForm extends React.Component {
                             id: this.state.book.id,
                             nome: this.state.book.name,
                             descrição: this.state.book.description,
-                            autor: event.target.value,
-                            foto: this.state.book.photo
-                        }
-                    }
-                );
-                break;
-            case "photo":
-                this.setState(
-                    {
-                        book: {
-                            id: this.state.book.id,
-                            nome: this.state.book.name,
-                            descrição: this.state.book.description,
-                            autor: this.state.book.author,
-                            foto: event.target.value
+                            autor: event.target.value
                         }
                     }
                 );
@@ -135,8 +116,7 @@ export class BookForm extends React.Component {
             id: this.state.book.id ? this.state.book.id : this.generatedID(),
             nome: this.state.book.name,
             descrição: this.state.book.description,
-            autor: this.state.book.author,
-            foto: this.state.book.photo,
+            autor: this.state.book.author
         };
         this.props.action.saveBookAction(book)
             .then(() => {
@@ -173,11 +153,6 @@ export class BookForm extends React.Component {
                     <div class="form-group">
                         <label for="author">Autor</label>
                         <input type="text" class="form-control" value={this.state.book.author} onChange={this.handleChange} id="author" aria-describedby="authorHelp" placeholder="Insira o nome do autor" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="photo">Foto</label>
-                        <input type="text" class="form-control" value={this.state.book.photo} onChange={this.handleChange} id="photo" placeholder="Insira a foto" aria-describedby="photoHelp" />
                     </div>
 
                     <div class="float-right">

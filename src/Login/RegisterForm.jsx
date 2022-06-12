@@ -10,8 +10,23 @@ const RegisterForm = ()=>{
         <h1>Registre-se em Storian</h1>
         <form className="needs-validation" action='#' method="" novalidate>
             <div>
-              <label className="form-label" for="username">Nome de Usuário</label>
-              <input className="form-control" id="username" type="text" placeholder="Insira o seu nome de usuário" name="username" required></input>
+              <label className="form-label" for="username">Nome</label>
+              <input className="form-control" id="username" type="text" placeholder="Insira o seu nome" name="username" required></input>
+            </div>
+
+            <div>
+              <label className="form-label" for="idade">Idade</label>
+              <input className="form-control" id="idade" type="number" placeholder="Insira a sua idade" name="idade" required></input>
+            </div>
+
+            <div>
+              <label className="form-label" for="telefone">Telefone</label>
+              <input className="form-control" id="telefone" type="text" placeholder="Insira o seu telefone" name="telefone" required></input>
+            </div>
+
+            <div>
+              <label className="form-label" for="cidade">Cidade</label>
+              <input className="form-control" id="cidade" type="text" placeholder="Insira a sua cidade" name="cidade" required></input>
             </div>
 
             <div>

@@ -178,9 +178,7 @@ export class BooksListContainer extends React.Component {
                                     </div>
                                 </form>
                             </div>
-                            <div className="col-md-2">
-                                <img className="img-thumbnail card-img-view" src={this.state.selectedBook.photo} alt="src={this.state.selectedBook.name}" />
-                            </div>
+                            
                         </div>
                     </Modal.Body>
                     <Modal.Footer>
